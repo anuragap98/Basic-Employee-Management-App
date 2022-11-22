@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto+Slab:wght@500&display=swap');
+
+/* Include any default variable overrides here (though functions won't be available) */
+$primary: #ed790596;
+
+@import '~bootstrap/scss/bootstrap';
+
+/* Other additional custom code here */
+.card-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.standout {
+  box-shadow: 0.8rem 0.8rem 0.5rem 0 rgba(0, 0, 0, 0.16), 0 0 0 0.15rem rgba(27, 26, 26, 0.8);
+}
+
+.title-text {
+  font-family: 'Roboto Slab', serif;
+}
+
+.title-content {
+  font-family: 'Roboto Slab', serif;
+  color: #020149cd;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: large;
+}
+
+.card-text {
+  font-family: 'Noto Serif', serif;
+  font-size: small;
+  font-weight: 700;
+}
+
+.title-team-style {
+  color: $danger;
+}
+
+#dropdown-menu {
+  color: $light;
+}
+
+body { 
+  background-image: linear-gradient(to bottom right, rgb(235, 161, 161), rgb(149, 207, 222), rgb(143, 212, 181));
+  background-size: cover;
+  text-align: center;
+}
+
+// @media (min-width: 576px)
+@include media-breakpoint-up(sm) {
+  .card-collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+// @media (min-width: 768px)
+@include media-breakpoint-up(md) {
+  .card-collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

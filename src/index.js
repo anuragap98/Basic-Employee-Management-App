@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+// Insert other imports below 
+// So that CSS from your components takes precedence over default styles.
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
