@@ -2,6 +2,7 @@
 
 /* Include any default variable overrides here (though functions won't be available) */
 $primary: #ed790596;
+$secondary: #bdd6ceb6;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -41,6 +42,10 @@ $primary: #ed790596;
 
 #dropdown-menu {
   color: $light;
+}
+
+.list-none {
+  list-style-type: none;
 }
 
 body { 
